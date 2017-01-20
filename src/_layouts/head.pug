@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Costco
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+    link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+    link(href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet")
+    block head_end
+
+  body.styleguide-body
+    include ../_partials/header.pug
+
+    block content
+    
+    include ../_partials/footer.pug
+    script(type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js")
+    script(src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js")
+
+    //- ===== GSAP =====
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js')
+    script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.js')
+
+    //- ===== Scroll Magic Library =====
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js')
+
+    //- ===== Image Hover 3D Effects =====
+    script(src="js/jquery.hover3d.min.js")
+    block body_end

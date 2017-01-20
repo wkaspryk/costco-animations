@@ -1,0 +1,72 @@
+//screen sizes
+$large-desktop:             2000px;
+$large-med-desktop:         1600px;
+$medium-desktop:			1366px;
+$med-sm-desktop:			1280px;
+$desktop-minimum:			1025px;
+$small-desktop:				1024px;
+$smaller-desktop-min:		861px;
+$smaller-desktop:			860px;
+$desktop:                   769px;   
+$tablet-portrait:			768px;
+$tablet-minimum-landscape:  736px;
+$fablet:					580px; 
+$tablet-minimum:            415px;
+$phone-large:               414px;
+$phone-medium:				375px;
+$phone-portrait:			320px;
+
+
+$max-width:   	$large-desktop;
+$min-width:    	$phone-portrait;
+
+
+
+
+// Colours
+$button__annotation-color: #bebebe;
+
+$button-primaryLight-color: #2da4d2;
+$button-primaryLight-hover-color: #8CC764;
+$button-primaryLight-active-color: #124369;
+$button-primaryLight-disabled: #e6f3dd;
+
+$button-primaryDark-color: #0A4780;
+$button-primaryDark-hover-color: #0E334F;
+$button-primaryDark-active-color: #081D2E;
+
+// SAMUS Colours
+$blue: #1977de;
+$dark-blue: #0060a8;
+$light-blue: #007bda;
+$yellow: #f69d38;
+$orange: #ec7202;
+$green:#4ca90c;
+$red: #e0393e;
+$black: #444444;
+$gray: #ededed;
+$blue-gray: #eef6fc;
+
+//  Mixins
+@mixin word-wrap-disable() {
+	white-space: nowrap; /* Chrome */
+}
+
+@mixin aside() {
+		> aside {
+		h1 {
+			font-size: 70px;
+			font-weight: bold;
+			padding-right: 20px; 
+			// color: #ebebeb;
+		}
+
+		h2 {
+			font-size: 26px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+	}
+}

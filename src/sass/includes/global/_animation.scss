@@ -1,0 +1,188 @@
+// ====== Global Animation ======
+// ====== Apply when needed======
+
+.animated {
+  animation: up 1s cubic-bezier(0.42, 0, 0, 0.995), 
+              fade 0.5s cubic-bezier(0.42, 0, 0, 0.995) forwards;
+  opacity: 0;            
+}
+
+.delay {
+  animation-delay: 1s;
+}
+
+.animated-left {
+  animation: left 1s cubic-bezier(0.42, 0, 0, 0.995), 
+              fade 0.5s cubic-bezier(0.42, 0, 0, 0.995) forwards;
+  opacity: 0;
+}
+
+.animated-right {
+  animation: right 1s cubic-bezier(0.42, 0, 0, 0.995), 
+              fade 0.5s cubic-bezier(0.42, 0, 0, 0.995) forwards;
+  opacity: 0;
+}
+
+.animated-scaleY {
+	animation: scaleY 1s cubic-bezier(0.42, 0, 0, 0.995) forwards;
+	transform-origin: center center;
+}
+
+
+
+
+
+// ====== Animation Keyframes ======
+@keyframes up {
+  0% {
+    transform: translateY(100px);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes expand {
+  0% {
+    width: 16.6vw;
+  }
+
+  100% {
+    width: 26.6vw;
+  }
+}
+
+@keyframes expandh {
+  0% {
+    height: 16.6vw;
+  }
+  100% {
+    height: 26.6vw;
+  }
+}
+
+@keyframes hide {
+  0% {
+    width: 16.6vw;
+  }
+
+  100% {
+    width: 0vw;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    margin-top: 100vh;
+    opacity: 0;
+  }
+  20% {
+    margin-top: 60vh;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0vh;
+    opacity: 1;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(20px);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(-20px);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleY {
+  0% {
+	transform: scaleY(0);
+  }
+  
+  100% {
+	transform: scaleY(1);
+  }
+}
+
+@keyframes selected-menu {
+  0% {
+	    height: 16.5vh;
+  }
+  
+  100% {
+    height: 200vh;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+	    transform: translateX(-100vw);
+  }
+  
+  30% {
+    transform: translateX(-100vw);
+  }
+  
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+
+//      SCROLL DOWN ICON      //
+
+@-webkit-keyframes circlescale {
+    from {
+        opacity: 1
+    }
+    to {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0
+    }
+}
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 0.2;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        margin: 16px 17px;
+        opacity: 0;
+        transform: scale(1);
+        transform: rotate(135deg);
+    }
+}
+
+// Text Animation - 1
+.text-in {
+  transform: scaleX(0);
+}
+
+
