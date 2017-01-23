@@ -7,7 +7,7 @@
 –––––––––––––––––––––––––––*/
 
 body {
-  font-family: 'Raleway', Arial, sans-serif, ;
+  font-family: Arial, sans-serif, ;
   color: #555;
   font-size: 16px;
   font-weight: 300;
@@ -56,13 +56,6 @@ p {
   line-height: 20px;
 }
 
-hr {
-  max-width: 1020px;
-  margin: 0 auto;
-  margin-bottom: 4%;
-  border: 1px solid #f2f2f2;
-}
-
 ul, li {
   padding: 0;
   margin: 0;
@@ -76,3 +69,112 @@ ul, li {
 *:before {
   box-sizing: border-box;
 }
+
+/* ------ Header ----- */
+
+.header-container {
+  width: 100%;
+  min-height: 125px;
+  background-color: $grey;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 35px solid $blue;
+  justify-content: center;
+  ul {
+    list-style: none;
+    color: #fff;
+    width: 100%;
+    height: 35px;
+    padding: 7px 0 0 10px;
+    li {
+      float: left;
+      margin-right: 15px;
+    }
+  }
+  .header-wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .nav-wrapper {
+    position: absolute;
+    bottom: -35px;
+  }
+  .header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    p {
+      color: #333;
+      margin: 0;
+      font-size: 12px;
+      padding: 0;
+      span {
+        &:first-child {
+          font-weight: bold;
+        }
+        &:last-child {
+          color: $light-blue;
+          cursor: pointer;
+        }
+      }
+    }
+    ul {
+      color: $light-blue;
+      width: auto;
+      li {
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 2;
+      }
+    }
+  }
+  .center-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    .my-acct {
+      display: flex;
+      color: $light-blue;
+      p {
+        margin-right: 20px;
+      }
+      .cart {
+        background: $yellow;
+        border-radius: 50%;
+        background-image: url("/img/cart.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: 13px 13px;
+        height: 50px;
+        width: 50px;
+        position: relative;
+        &:before {
+          content: '1';
+          height: 25px;
+          width: 25px;
+          background: #fff;
+          border: 2px solid $light-blue;
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          left: -9px;
+          top: -5px;
+          text-align: center;
+          font-size: 11px;
+          line-height: 1.9;
+        }
+      }
+    }
+  }
+  hr {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    border: 1px solid #cfcfcf;
+  }
+}
+
+/* ------ End Header ----- */
