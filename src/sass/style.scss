@@ -5,6 +5,7 @@
 @import 'includes/global/_grid.scss';
 @import 'includes/global/_animation.scss';
 @import "includes/global/_base.scss";
+@import "includes/global/_global.scss";
 
 // ===== Pages Style =====
 @import 'includes/_home.scss';
@@ -12,3 +13,6 @@
 @import 'includes/_search.scss';
 @import 'includes/_sku.scss';
 
+
+// ===== Component Style =====
+@import 'includes/component/button.scss';
