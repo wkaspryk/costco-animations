@@ -9,6 +9,14 @@ block content
 
 	//- Section: Carousel
 	.carousel.row
+		.carousel_img
+			img(src="https://businessprinting.samsclub.com/dynamic/en-US/BusinessStationery/header")
+		.carousel_controls
+			a(href="").carousel_pagination.active
+			a(href="").carousel_pagination
+			a(href="").carousel_pagination
+			a(href="").carousel_pagination
+			a(href="").carousel_pagination
 	.wrapper
 
 		//- Section: Features Products
@@ -41,12 +49,12 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/6?v=c28311a17366baba", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
 											p Check out this spring's trends
-											.grid_item_price From $14.99
+											.grid_item_price From $15.99
 
 					//- Component: product-item.pug
 					.grid-33
@@ -90,8 +98,8 @@ block content
 						img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/Bottom-Banners/browse-occasions?v=faffd57c97a01b1e", alt="")
 
 		//- Section: More Products
-		section
-			.product-container
+		section#more-products
+			.product-container.row
 					h3.title More Products
 
 					//- More Products: left column
