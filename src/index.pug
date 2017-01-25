@@ -25,9 +25,9 @@ block content
 				h3.title Featured Products
 
 				//- Component: Product Container
-				.row.product-container_grid
+				ul.row.product-container_grid
 					//- Component: product-item.pug
-					.grid-33
+					li.grid-33
 						include _partials/component/product-item.pug
 							block grid_item
 								a(href="").grid_item
@@ -42,7 +42,7 @@ block content
 											.grid_item_price From $14.99
 
 					//- Component: product-item.pug
-					.grid-33
+					li.grid-33
 						include _partials/component/product-item.pug
 							block grid_item
 								a(href="").grid_item
@@ -57,7 +57,7 @@ block content
 											.grid_item_price From $15.99
 
 					//- Component: product-item.pug
-					.grid-33
+					li.grid-33
 						include _partials/component/product-item.pug
 							block grid_item
 								a(href="").grid_item

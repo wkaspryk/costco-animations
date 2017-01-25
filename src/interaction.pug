@@ -1,0 +1,423 @@
+extends _layouts/head
+
+block head_end
+	link(rel="stylesheet" href="css/style.css") 
+
+block content
+
+	//- Home page structure starts
+
+	//- Section: Carousel
+	.carousel.row
+		.carousel_img
+			img(src="https://businessprinting.samsclub.com/dynamic/en-US/BusinessStationery/header")
+		.carousel_controls
+			a(href="").carousel_pagination.active
+			a(href="").carousel_pagination
+			a(href="").carousel_pagination
+			a(href="").carousel_pagination
+			a(href="").carousel_pagination
+	.wrapper
+
+		//- Section: Features Products
+		section#interaction-1
+			.product-container
+				h3.title Interaction 1
+
+				//- Component: Product Container
+				ul.row.product-container_grid
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/6?v=c28311a17366baba", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $15.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+		//- Section: Features Products
+		section#interaction-2
+			.product-container
+				h3.title Interaction 2
+
+				//- Component: Product Container
+				ul.row.product-container_grid
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/6?v=c28311a17366baba", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $15.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+		//- Section: Features Products
+		section#interaction-3
+			.product-container
+				h3.title Interaction 3
+
+				//- Component: Product Container
+				ul.row.product-container_grid
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/6?v=c28311a17366baba", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $15.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+		//- Section: Features Products
+		section#interaction-4
+			.product-container
+				h3.title Interaction 4
+
+				//- Component: Product Container
+				ul.row.product-container_grid
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/6?v=c28311a17366baba", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $15.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+		//- Section: Features Products
+		section#interaction-5
+			.product-container
+				h3.title Interaction 5
+
+				//- Component: Product Container
+				ul.row.product-container_grid
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/6?v=c28311a17366baba", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $15.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/ThingsToMake/1?v=85e0b00c3c97cca0", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+
+		//- Section: Learn More
+		//- Component: Full width tile
+		section
+			.full-width-tile
+				.row.learn-more
+					.grid-50.learn-more_img
+						img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/Bottom-Banners/shop-industry?v=5391e62ee89c84f1", alt="")
+					.grid-50.learn-more_desc
+						h3 Quality at your Fingertips
+						p Lorem ipsum dolor sit amet, tibique interesset cu vim, et pri partem impedit interesset, in hinc aliquip sea. Has mucius vocent fabellas eu, eum recteque consequuntur in.
+						//- Component: button
+						include _partials/component/button
+							block btn_title
+								h1.btn_title Learn More
+
+				.row.learn-more
+					.grid-50.learn-more_desc
+						h3 Professional Designs to Choose From
+						p Lorem ipsum dolor sit amet, tibique interesset cu vim, et pri partem impedit interesset, in hinc aliquip sea. Has mucius vocent fabellas eu, eum recteque consequuntur in.
+						//- Component: button
+						include _partials/component/button
+							block btn_title
+								h1.btn_title Learn More
+					.grid-50.learn-more_img
+						img(src="https://businessprinting.samsclub.com/dynamic/Content/images/RetailerSpecific/SAMUS/Home/Bottom-Banners/browse-occasions?v=faffd57c97a01b1e", alt="")
+
+		//- Section: More Products
+		section#more-products
+			.product-container.row
+					h3.title More Products
+
+					//- More Products: left column
+					.grid-50.product-container_grid
+						.grid-100
+							//- Component: product-item.pug
+							include _partials/component/product-item.pug
+								block grid_item
+									a(href="").grid_item
+									
+										block img
+											.grid_item_img
+												img(src="https://businessprinting.samsclub.com/dynamic/en-US/BusinessCards_EducationChildCare/thumb", alt="")
+										block item_desc
+											.grid_item_desc
+												h4 Top Business Cards
+												p Check out this spring's trends
+												.grid_item_price From $14.99
+						.grid-50
+							//- Component: product-item.pug
+							include _partials/component/product-item.pug
+								block grid_item
+									a(href="").grid_item
+									
+										block img
+											.grid_item_img
+												img(src="https://businessprinting.samsclub.com/dynamic/en-US/BusinessCards_EducationChildCare/thumb", alt="")
+										block item_desc
+											.grid_item_desc
+												h4 Top Business Cards
+												p Check out this spring's trends
+												.grid_item_price From $14.99
+						.grid-50
+							//- Component: product-item.pug
+							include _partials/component/product-item.pug
+								block grid_item
+									a(href="").grid_item
+									
+										block img
+											.grid_item_img
+												img(src="https://businessprinting.samsclub.com/dynamic/en-US/BusinessCards_EducationChildCare/thumb", alt="")
+										block item_desc
+											.grid_item_desc
+												h4 Top Business Cards
+												p Check out this spring's trends
+												.grid_item_price From $14.99
+
+					//- More Products: right column
+					.grid-50.product-container_grid
+						.grid-50
+							//- Component: product-item.pug
+							include _partials/component/product-item.pug
+								block grid_item
+									a(href="").grid_item
+									
+										block img
+											.grid_item_img
+												img(src="https://businessprinting.samsclub.com/dynamic/en-US/BusinessCards_EducationChildCare/thumb", alt="")
+										block item_desc
+											.grid_item_desc
+												h4 Top Business Cards
+												p Check out this spring's trends
+												.grid_item_price From $14.99
+						.grid-50
+							//- Component: product-item.pug
+							include _partials/component/product-item.pug
+								block grid_item
+									a(href="").grid_item
+									
+										block img
+											.grid_item_img
+												img(src="https://businessprinting.samsclub.com/dynamic/en-US/BusinessCards_EducationChildCare/thumb", alt="")
+										block item_desc
+											.grid_item_desc
+												h4 Top Business Cards
+												p Check out this spring's trends
+												.grid_item_price From $14.99
+						.grid-100
+							//- Component: product-item.pug
+							include _partials/component/product-item.pug
+								block grid_item
+									a(href="").grid_item
+									
+										block img
+											.grid_item_img
+												img(src="https://businessprinting.samsclub.com/dynamic/en-US/BusinessCards_EducationChildCare/thumb", alt="")
+										block item_desc
+											.grid_item_desc
+												h4 Top Business Cards
+												p Check out this spring's trends
+												.grid_item_price From $14.99
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+block body_end
+	script(type="text/javascript" src="js/script.js")

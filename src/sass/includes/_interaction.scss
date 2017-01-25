@@ -1,0 +1,129 @@
+// ===== Interaction 1 =====
+#interaction-1 {
+
+  .product-container_grid {
+
+    .grid_item {
+      transition: all .35s ease;
+      position: relative;
+      overflow: visible;
+      background-color: #fff;
+
+      &:after {
+        transition: all .35s ease;
+        content: '';
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        bottom: 0;
+        left: 5%;
+        z-index: -1;
+      }
+
+      &:hover:after {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+// ===== Interaction 2 =====
+#interaction-2 {
+
+  .product-container_grid {
+
+    .grid_item {
+      transition: all .35s ease;
+      position: relative;
+      overflow: visible;
+      background-color: #fff;
+
+      &:after {
+        transition: all .35s ease;
+        content: '';
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        left: 5%;
+        bottom: 0;
+        border-radius: 30%;
+        z-index: -1;
+      }
+
+      &:hover:after {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+// ===== Interaction 3 =====
+#interaction-3 {
+
+  .product-container_grid {
+
+    .grid_item {
+      transition: all .35s ease;
+      position: relative;
+      overflow: visible;
+      background-color: #fff;
+
+      &:hover {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+      }
+    }
+  }
+}
+
+// ===== Interaction 4 =====
+#interaction-4 {
+
+  .product-container_grid {
+
+    .grid_item {
+      transition: all .4s ease;
+      position: relative;
+      overflow: visible;
+      background-color: #fff;
+
+      .grid_item_desc {
+      }
+
+      &:hover {
+        background: #0060a8;
+        color: #fff;
+      }
+
+      &:hover .grid_item_price{
+        color: #fff;
+      }
+
+    }
+  }
+}
+
+// ===== Interaction 5 =====
+#interaction-5 {
+
+  .product-container_grid {
+
+    .grid_item {
+      transition: all .4s ease;
+      position: relative;
+      overflow: visible;
+      background-color: #fff;
+
+      .grid_item_desc {
+      }
+
+      &:hover {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transform: scale(1.15);
+        z-index: 9;
+      }
+
+
+    }
+  }
+}
