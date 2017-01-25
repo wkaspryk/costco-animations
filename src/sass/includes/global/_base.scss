@@ -102,6 +102,9 @@ ul, li {
   .nav-wrapper {
     position: absolute;
     bottom: -35px;
+    li {
+      margin-right: 30px;
+    }
   }
   .header-links {
     display: flex;
