@@ -4,6 +4,11 @@ button {
   background-color: #0060a8;
   cursor: pointer;
   border: none;
+  transition: background-color .35s ease;
+}
+
+button:hover {
+  background-color: #007bda;
 }
 
 .btn_title {

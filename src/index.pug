@@ -10,13 +10,21 @@ block content
 	//- Section: Carousel
 	.carousel.row
 		.carousel_img
-			img(src="/img/home_img/banner.png")
+			img(src="/img/home_img/carousel-1.png").carousel_img-1
+
+		ul.carousel_arrow-container
+			li.carousel_arrow.carousel_arrow-prev
+				.arrow-prev
+			li.carousel_arrow.carousel_arrow-next
+				.arrow-next
+
 		.carousel_controls
 			a(href="").carousel_pagination.active
 			a(href="").carousel_pagination
 			a(href="").carousel_pagination
 			a(href="").carousel_pagination
 			a(href="").carousel_pagination
+
 	.wrapper
 
 		//- Section: Features Products
