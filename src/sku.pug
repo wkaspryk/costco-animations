@@ -7,5 +7,105 @@ block content
 
 	.content-wrapper.search
 
+	.wrapper#category-page.sku
+		
+		section
+			.row.card
+				.grid-50.imageside
+					img(src="/img/skum/card.png", alt="")
+					.buttons 
+						h3.active Front
+						h3 Back
+
+				.grid-50.descriptionside
+					h3 Farmar's Place
+					.htitle Business Cards 
+					.options
+						.buttons 
+							h3.active Options
+							h3 Pricing
+					.hdescription Select a Color
+					.colour-grid
+						.circle-container.primary-color__1
+							.circle
+						.circle-container.primary-color__2
+							.circle
+						.circle-container.primary-color__3
+							.circle
+					.hdescription Select an orientation
+					//-.dropdown <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Landscape <span class="caret"></span></button>
+					.dropdown
+						button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown') Landscape
+							span.caret
+
+					.hdescription Sides
+					.dropdown <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Single sided <span class="caret"></span></button>
+
+					.total 
+						h3 Set of 250 at 
+							strong $9.99
+						button.continue CONTINUE					
+
+
+		//- Section: Learn More
+		//- Component: Full width tile
+		section.secondcont
+			.full-width-tile
+				.row.learn-more
+					.grid-50.learn-more_desc
+						h3 Quality at your Fingertips
+						p Lorem ipsum dolor sit amet, tibique interesset cu vim, et pri partem impedit interesset, in hinc aliquip sea. Has mucius vocent fabellas eu, eum recteque consequuntur in.
+						//- Component: button
+						
+					.grid-50.learn-more_img
+						img(src="/img/skum/sku_banner.png", alt="")
+
+		//- Section: Features Products
+		section.papers
+			.product-container
+				//- Component: Product Container
+				.row.product-container_grid
+					//- Component: product-item.pug
+					.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="/img/skum/sku1.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Matte
+											.hdescription Coated with a smooth, flat film that reduces glare and reflection. Colors appers more muted and subtle.
+
+					//- Component: product-item.pug
+					.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="/img/skum/sku2.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Gloss
+											.hdescription Coated with a smooth, shiny film that creates a reflective surface. Colors apper more vibrant and text appears more crisp.
+
+					//- Component: product-item.pug
+					.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="/img/skum/sku3.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Ultra Thick
+											.hdescription Luxurious ultra-white stock with an eggshell finich.Double the thinkness of a standard business card.
+
 block body_end
 	script(type="text/javascript" src="js/script.js")
