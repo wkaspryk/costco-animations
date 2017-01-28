@@ -10,9 +10,9 @@ block content
 	//- Section: Carousel
 	.carousel.row#carousel-1
 		.carousel_img
-			img(src="/img/home_img/carousel-1.png").carousel_img-1.active
-			img(src="/img/home_img/carousel-2.jpg").carousel_img-2
-			img(src="/img/home_img/carousel-3.jpg").carousel_img-3
+			img(src="img/home_img/carousel-1.png").carousel_img-1.active
+			img(src="img/home_img/carousel-2.jpg").carousel_img-2
+			img(src="img/home_img/carousel-3.jpg").carousel_img-3
 
 		ul.carousel_arrow-container
 			li.carousel_arrow.carousel_arrow-prev
@@ -29,9 +29,9 @@ block content
 	//- Section: Carousel
 	.carousel.row#carousel-2
 		.carousel_img
-			img(src="/img/home_img/carousel-1.png").carousel_img-1.active
-			img(src="/img/home_img/carousel-1.png").carousel_img-2
-			img(src="/img/home_img/carousel-1.png").carousel_img-3
+			img(src="img/home_img/carousel-1.png").carousel_img-1.active
+			img(src="img/home_img/carousel-1.png").carousel_img-2
+			img(src="img/home_img/carousel-1.png").carousel_img-3
 
 		ul.carousel_arrow-container
 			li.carousel_arrow.carousel_arrow-prev
@@ -63,7 +63,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card3.png", alt="")
+											img(src="img/home_img/card3.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -78,7 +78,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card4.png", alt="")
+											img(src="img/home_img/card4.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -93,7 +93,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card5.png", alt="")
+											img(src="img/home_img/card5.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -115,7 +115,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card3.png", alt="")
+											img(src="img/home_img/card3.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -130,7 +130,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card4.png", alt="")
+											img(src="img/home_img/card4.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -145,7 +145,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card3.png", alt="")
+											img(src="img/home_img/card5.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -167,7 +167,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card3.png", alt="")
+											img(src="img/home_img/card3.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -182,7 +182,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card4.png", alt="")
+											img(src="img/home_img/card4.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -197,7 +197,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card3.png", alt="")
+											img(src="img/home_img/card5.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -219,7 +219,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card3.png", alt="")
+											img(src="img/home_img/card3.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -234,7 +234,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card4.png", alt="")
+											img(src="img/home_img/card4.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -249,7 +249,59 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card3.png", alt="")
+											img(src="img/home_img/card5.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+		//- Section: Features Products
+		section#interaction-4-1
+			.product-container
+				h3.title Interaction 4-1
+
+				//- Component: Product Container
+				ul.row.product-container_grid
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="img/home_img/card3.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="img/home_img/card4.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $15.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="img/home_img/card5.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -271,7 +323,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card3.png", alt="")
+											img(src="img/home_img/card3.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -286,7 +338,7 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card4.png", alt="")
+											img(src="img/home_img/card4.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
@@ -301,15 +353,116 @@ block content
 								
 									block img
 										.grid_item_img
-											img(src="/img/home_img/card3.png", alt="")
+											img(src="img/home_img/card5.png", alt="")
 									block item_desc
 										.grid_item_desc
 											h4 Top Business Cards
 											p Check out this spring's trends
 											.grid_item_price From $14.99
 
+		//- Section: Features Products
+		section#interaction-6
+			.product-container
+				h3.title Interaction 6
 
+				//- Component: Product Container
+				ul.row.product-container_grid
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="img/home_img/card3.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
 
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="img/home_img/card4.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $15.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="img/home_img/card5.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+		//- Section: Features Products
+		section#interaction-7
+			.product-container
+				h3.title Interaction 7: Image Zoom-in
+
+				//- Component: Product Container
+				ul.row.product-container_grid
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="img/home_img/card3.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="img/home_img/card4.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $15.99
+
+					//- Component: product-item.pug
+					li.grid-33
+						include _partials/component/product-item.pug
+							block grid_item
+								a(href="").grid_item
+								
+									block img
+										.grid_item_img
+											img(src="img/home_img/card5.png", alt="")
+									block item_desc
+										.grid_item_desc
+											h4 Top Business Cards
+											p Check out this spring's trends
+											.grid_item_price From $14.99
 
 
 		//- Section: Learn More
@@ -318,7 +471,7 @@ block content
 			.full-width-tile
 				.row.learn-more
 					.grid-50.learn-more_img
-						img(src="/img/home_img/banner2.png", alt="")
+						img(src="img/home_img/banner2.png", alt="")
 					.grid-50.learn-more_desc
 						h3 Quality at your Fingertips
 						p Lorem ipsum dolor sit amet, tibique interesset cu vim, et pri partem impedit interesset, in hinc aliquip sea. Has mucius vocent fabellas eu, eum recteque consequuntur in.
@@ -336,7 +489,7 @@ block content
 							block btn_title
 								h1.btn_title Learn More
 					.grid-50.learn-more_img
-						img(src="/img/home_img/banner3.png", alt="")
+						img(src="img/home_img/banner3.png", alt="")
 
 		//- Section: More Products
 		section#more-products
@@ -353,7 +506,7 @@ block content
 									
 										block img
 											.grid_item_img
-												img(src="/img/home_img/card1.png", alt="")
+												img(src="img/home_img/card1.png", alt="")
 										block item_desc
 											.grid_item_desc
 												h4 Top Business Cards
@@ -367,7 +520,7 @@ block content
 									
 										block img
 											.grid_item_img
-												img(src="/img/home_img/card4.png", alt="")
+												img(src="img/home_img/card4.png", alt="")
 										block item_desc
 											.grid_item_desc
 												h4 Top Business Cards
@@ -381,7 +534,7 @@ block content
 									
 										block img
 											.grid_item_img
-												img(src="/img/home_img/card5.png", alt="")
+												img(src="img/home_img/card5.png", alt="")
 										block item_desc
 											.grid_item_desc
 												h4 Top Business Cards
@@ -398,7 +551,7 @@ block content
 									
 										block img
 											.grid_item_img
-												img(src="/img/home_img/card2.png", alt="")
+												img(src="img/home_img/card2.png", alt="")
 										block item_desc
 											.grid_item_desc
 												h4 Top Business Cards
@@ -412,7 +565,7 @@ block content
 									
 										block img
 											.grid_item_img
-												img(src="/img/home_img/card3.png", alt="")
+												img(src="img/home_img/card3.png", alt="")
 										block item_desc
 											.grid_item_desc
 												h4 Top Business Cards
@@ -426,7 +579,7 @@ block content
 									
 										block img
 											.grid_item_img
-												img(src="/img/home_img/card6.png", alt="")
+												img(src="img/home_img/card6.png", alt="")
 										block item_desc
 											.grid_item_desc
 												h4 Top Business Cards
