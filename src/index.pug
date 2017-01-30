@@ -25,10 +25,10 @@ block content
 			a(href="").carousel_pagination
 			a(href="").carousel_pagination
 
-	.wrapper#interaction-1
+	.wrapper#home-page
 
 		//- Section: Features Products
-		section
+		section#interaction-1
 			.product-container
 				h3.title Featured Products
 
@@ -83,7 +83,7 @@ block content
 		//- Component: Full width tile
 		section
 			.full-width-tile
-				.row.learn-more
+				.row.learn-more#learnMore_1_Show
 					.grid-50.learn-more_img
 						img(src="img/home_img/banner2.png", alt="")
 					.grid-50.learn-more_desc
@@ -94,7 +94,7 @@ block content
 							block btn_title
 								h1.btn_title Learn More
 
-				.row.learn-more
+				.row.learn-more#learnMore_2_Show
 					.grid-50.learn-more_desc
 						h3 Professional Designs to Choose From
 						p Lorem ipsum dolor sit amet, tibique interesset cu vim, et pri partem impedit interesset, in hinc aliquip sea. Has mucius vocent fabellas eu, eum recteque consequuntur in.
@@ -106,8 +106,8 @@ block content
 						img(src="img/home_img/banner3.png", alt="")
 
 		//- Section: More Products
-		section#more-products
-			.product-container.row
+		section#moreProducts
+			.product-container.row#interaction-1
 					h3.title More Products
 
 					//- More Products: left column
@@ -219,4 +219,3 @@ block content
 
 
 block body_end
-	script(type="text/javascript" src="js/script.js")

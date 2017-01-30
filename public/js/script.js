@@ -98,13 +98,6 @@ $('#carousel-2 .carousel_arrow-next').click(function(){
 	TweenMax.fromTo($nextImg, 1, {xPercent: 100, scale: 1, zIndex: 9, display: 'none'},
                                     {xPercent: 0, scale: 1, display: 'block', zIndex: 9, ease: Power2.easeInOut});
 
-  // Animation: Pagination
-	// TweenMax.fromTo($activePagination, 0.5, {scale: 1.2},
-  //                                   {scale: 0.8, ease: Elastic.easeOut.config(1.2, 0.75)});
-
-	// TweenMax.fromTo($nextPagination, 0.5, {scale: 0.8},
-  //                                   {scale: 1.2, ease: Elastic.easeOut.config(1.2, 0.75)});
-
   // Image Active
   $activeImg.removeClass('active');
   $nextImg.addClass('active');
@@ -138,15 +131,6 @@ $('#carousel-2 .carousel_arrow-prev').click(function(){
 
 	TweenMax.fromTo($prevImg, 1, {xPercent: -10, scale: 0.9, zIndex: 1, display: 'none'},
                                     {xPercent: 0, scale: 1, display: 'block', zIndex: 9, ease: Power2.easeInOut});
-
-
-  // Animation: Pagination
-	// TweenMax.fromTo($activePagination, 0.5, {scale: 1.2},
-  //                                   {scale: 0.8, ease: Elastic.easeOut.config(1.2, 0.75)});
-
-	// TweenMax.fromTo($prevPagination, 0.5, {scale: 0.8},
-  //                                   {scale: 1.2, ease: Elastic.easeOut.config(1.2, 0.75)});
-
 
   // Image Active
   $activeImg.removeClass('active'),
