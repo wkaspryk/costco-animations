@@ -105,31 +105,6 @@
   opacity: 1;
 }
 
-
-
-// .arrows-prev .arrow, .arrows-next .arrow {
-//   width: 20px;
-//   height: 2px;
-//   background-color: #878787;
-//   transform-origin: -5% 50%;
-// }
-
-// .arrows-prev, .arrows-next {
-//   width: 20px;
-//   height: 20px;
-// }
-
-// .arrows-next {
-//   transform: rotateY(180deg);
-// }
-
-// .arrows-prev .arrow:nth-child(1), .arrows-next .arrow:nth-child(1) {
-//   transform: rotate(45deg);
-// }
-// .arrows-prev .arrow:nth-child(2), .arrows-next .arrow:nth-child(2) {
-//   transform: rotate(-45deg);
-// }
-
 // Section Spacing
 section {
   margin-bottom: 30px;
@@ -179,19 +154,20 @@ section {
   overflow: hidden;
 
   h4 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 3px 0;
   }
 }
 
 .grid_item_price {
-  color: blue;
+  color: #0060A8;
   font-size: 14px;
+  font-weight: bold;
 }
 
 
