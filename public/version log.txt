@@ -4,3 +4,4 @@ Demo Website
 Version Log:
 v1.0 - 1/30/2017 (1st uploaded)
 v1.1 - 2/2/2017 (removed unwanted interactions)
+v1.2 - 2/7/2017 (update carousel.js, add carousel automation/play/pause)

@@ -153,11 +153,13 @@ $('.carouselPlay').click(function(){
 //  ===== Next Arrow =====
 $('#carousel-2 .carousel_arrow-next').click(function(){
   
-  // carouselPause();
-
-  // Clear carouselStart window object then call again
-  carouselStop = clearInterval(is_carouselStart);
-  is_carouselStart = carouselStart(); 
+  if ($('.carouselPause').css('display') == 'block') {
+    // Clear carouselStart window object then call again
+    carouselStop = clearInterval(is_carouselStart);
+    is_carouselStart = carouselStart(); 
+  } else {
+    carouselStop = clearInterval(is_carouselStart);
+  }
 
   // Carousel Images
   var $activeImg = $('#carousel-2 .carousel_img img.active'),
@@ -196,9 +198,13 @@ $('#carousel-2 .carousel_arrow-next').click(function(){
 //  ===== Previous Arrow =====
 $('#carousel-2 .carousel_arrow-prev').click(function(){
 
-  // Clear carouselStart window object then call again
-  carouselStop = clearInterval(is_carouselStart);
-  is_carouselStart = carouselStart(); 
+  if ($('.carouselPause').css('display') == 'block') {
+    // Clear carouselStart window object then call again
+    carouselStop = clearInterval(is_carouselStart);
+    is_carouselStart = carouselStart(); 
+  } else {
+    carouselStop = clearInterval(is_carouselStart);
+  }
 
   // Carousel Images
   var $activeImg = $('#carousel-2 .carousel_img img.active'),
