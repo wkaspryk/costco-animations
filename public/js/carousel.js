@@ -1,9 +1,12 @@
-// Carousel Logic
+// Wrap up in IIFE
+(function () { 
 
-// ========== Carousel-1 Fading ==========
+  // Carousel Logic
 
-//  ===== Next Arrow =====
-$('#carousel-1 .carousel_arrow-next').click(function(){
+  // ========== Carousel-1 Fading ==========
+
+  //  ===== Next Arrow =====
+  $('#carousel-1 .carousel_arrow-next').click(function(){
   // Carousel Images
   var $activeImg = $('#carousel-1 .carousel_img img.active'),
       $nextImg = $activeImg.next(),
@@ -67,16 +70,11 @@ $('#carousel-1 .carousel_arrow-prev').click(function(){
 });
 
 
-
-
-
 // ========== Carousel-2: Slide Left Effect ==========
 
 // ========== Page Loaded Activate ==========
 
-var is_carouselStop = false;
-// var myVar;
-var is_carouselStart;
+var carouselStartId;
 
 function carouselStart(){
   return setInterval(function(){
@@ -113,25 +111,24 @@ function carouselStart(){
   }, 4000);
 }
 
+// Activate Carousel 
+$( document ).ready( carouselStartId = carouselStart()  );
 
-if (is_carouselStop == false) {
-  is_carouselStart = carouselStart(); 
-} else {
-  carouselStop = clearInterval(is_carouselStart);
-}
+
 
 //  ===== Carousel Pause =====
 function carouselPause(){
-  carouselStop = clearInterval(is_carouselStart);
+  clearInterval(carouselStartId);
 
   TweenMax.to($('.carouselPause'), 0.2, {x: 20, opacity: 0, display: 'none', scale: 0.3, ease: Power2.easeInOut});
   TweenMax.fromTo($('.carouselPlay'), 0.2, {x: -20, opacity: 0, scale: 0.3, display: 'none'},
                 {x: 0, opacity: 1, display: 'block', scale: 1, ease: Power2.easeInOut});
 }
 
+//  ===== Carousel Play =====
 function carouselPlay(){
-  carouselStop = clearInterval(is_carouselStart);
-  is_carouselStart = carouselStart(); 
+  clearInterval(carouselStartId);
+  carouselStartId = carouselStart(); 
 
 	TweenMax.to($('.carouselPlay'), 0.2, {x: 20, opacity: 0, scale: 0.3,  display: 'none', ease: Power2.easeInOut});
 	TweenMax.fromTo($('.carouselPause'), 0.2, {x: -20, opacity: 0, scale: 0.3, display: 'none'},
@@ -153,12 +150,13 @@ $('.carouselPlay').click(function(){
 //  ===== Next Arrow =====
 $('#carousel-2 .carousel_arrow-next').click(function(){
   
-  if ($('.carouselPause').css('display') == 'block') {
+  if ($('.carouselPause').css('display') === 'block') {
     // Clear carouselStart window object then call again
-    carouselStop = clearInterval(is_carouselStart);
-    is_carouselStart = carouselStart(); 
+    clearInterval(carouselStartId);
+    carouselStartId = carouselStart(); 
+
   } else {
-    carouselStop = clearInterval(is_carouselStart);
+    clearInterval(carouselStartId);
   }
 
   // Carousel Images
@@ -200,10 +198,10 @@ $('#carousel-2 .carousel_arrow-prev').click(function(){
 
   if ($('.carouselPause').css('display') == 'block') {
     // Clear carouselStart window object then call again
-    carouselStop = clearInterval(is_carouselStart);
-    is_carouselStart = carouselStart(); 
+    clearInterval(carouselStartId);
+    carouselStartId = carouselStart(); 
   } else {
-    carouselStop = clearInterval(is_carouselStart);
+    clearInterval(carouselStartId);
   }
 
   // Carousel Images
@@ -237,3 +235,6 @@ $('#carousel-2 .carousel_arrow-prev').click(function(){
   $activePagination.removeClass('active'),
   $prevPagination.addClass('active')
 });
+})();
+
+
