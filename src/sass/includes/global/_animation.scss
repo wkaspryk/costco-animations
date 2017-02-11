@@ -180,6 +180,14 @@
     }
 }
 
+@keyframes shadowloop {
+  0% {
+    left: -200%;
+  }
+  100% {
+    left: 140%;
+  }
+}
 // Text Animation - 1
 .text-in {
   transform: scaleX(0);

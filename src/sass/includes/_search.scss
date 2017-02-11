@@ -77,45 +77,219 @@
             font-weight: bold;
         }
     }
+    
+    .row.grayloader {
+        overflow: hidden;
+        transition: opacity 1s cubic-bezier(0.6, 0, 0.2, 1);
+    }
+
+    .row.grayloader .shadow1{
+        height: 150%;
+        width: 150%;
+        opacity: 1;
+        background: #f4f4f4;
+        position: absolute;
+        z-index: 100;
+        transform: rotate(25deg);
+        transform-origin: center;
+        top: -30%;
+        left: -10px;
+        animation: shadowloop 3s cubic-bezier(0.35, 0.01, 0, 0.99) infinite;
+    }
+
+
+    .row.grayloader .search-tile{
+        overflow: hidden;
+        position: relative;
+        background: #f4f4f4;
+        border-radius: 20px;
+        transition: all 1s cubic-bezier(0.6, 0, 0.2, 1);
+        z-index: 20;
+        .imagesfake{
+            height: 240px;
+            width: 82%;
+            margin-bottom: 25px;
+            background-color: #dfdfdf;
+            border-radius: 15px;
+            opacity: 1;
+            position: absolute;
+            transition: opacity 1s cubic-bezier(0.6, 0, 0.2, 1);
+        }
+        img{
+            cursor: pointer;
+            display: flex;
+            opacity: 0;
+            transition: opacity 1s cubic-bezier(0.6, 0, 0.2, 1);
+            // transition-delay: 1s;
+            color: transparent;
+            border-radius: 15px;
+        }
+        .colors{
+            background-color: #dfdfdf;
+            border-radius: 20px;
+            transition: all 1s cubic-bezier(0.6, 0, 0.2, 1);  
+        } 
+        h4{ 
+            user-select:none;
+            color: transparent;
+            background-color: #dfdfdf;
+            border-radius: 10px;
+            width: 80%;
+            transition: all 1s linear;
+            
+        }
+        p{  
+            user-select:none;
+            color: transparent;
+            transition: all 1s linear;
+            
+        }
+        a{  
+            user-select:none;
+            color: transparent;
+            background-color: #dfdfdf;
+            border-radius: 10px;
+            width: 60%;
+            transition: all 1s linear;
+            
+        }
+        .grayline{
+            display: none;
+            transition: all 1s linear;
+            
+        }
+        .search-details p{
+            user-select:none;
+            color: transparent;
+            background-color: #dfdfdf;
+            border-radius: 10px;
+            width: 80%;
+            transition: all 1s linear;
+            
+        }
+        div[class^="colors-"]{
+            opacity: 0;
+            transition: all 2s cubic-bezier(0.6, 0, 0.2, 1) .1s;
+        }
+    }
     .search-tile {
         display: flex;
         min-height: 40px;
-        background: $light-grey;
-        margin: 7px;
+        background: #f4f4f4;
+        margin: 10px;
         flex-direction: column;
         align-items: center;
         font-size: 14px;
         padding: 20px;
         img {
-            width: 100%;
+            width: 90%;
+            margin-bottom: 25px;
+        }
+        .colors{
+            display: flex;
+            height: 13px;
+            justify-content: center;
             margin-bottom: 20px;
-            &:last-of-type {
-                width: auto;
+            width: 150px;
+            .colors-a{
+                width: 50px;
+                background-color: #5c7864;
+            }
+            .colors-b{
+                width: 50px;
+                background-color: #d7d7d7;
+            }
+            .colors-c{
+                width: 50px;
+                background-color: #ecece2;
+            }
+            .colors-d{
+                width: 50px;
+                background-color: #e8bcb1;
+            }
+            .colors-e{
+                width: 50px;
+                background-color: #c5e02f;
+            }
+            .colors-f{
+                width: 50px;
+                background-color: #427406;
+            }
+            .colors-g{
+                width: 50px;
+                background-color: #f4a725;
+            }
+            .colors-h{
+                width: 50px;
+                background-color: #3a3a3a;
+            }
+            .colors-i{
+                width: 50px;
+                background-color: #1a479c;
+            }
+            .colors-j{
+                width: 50px;
+                background-color: #f4a723;
+            }
+            .colors-k{
+                width: 50px;
+                background-color: #dbb430;
+            }
+            .colors-l{
+                width: 50px;
+                background-color: #3d5034;
+            }
+            .colors-m{
+                width: 50px;
+                background-color: #d9cb80;
+            }
+            .colors-n{
+                width: 50px;
+                background-color: #194538;
             }
         }
         h4 {
+            color: #444;
+            font-weight: normal;
+            line-height: 22px;
             margin: 0;
+            text-align: center;
         }
         p {
+            color: #444;
+            font-size: 16px;
+            line-height: 18px;
             margin: 5px 0;
         }
-        button {
-            color: #fff;
+        a {
+            color: $light-blue;
+            background: none;
+            background-color: none;
+            cursor: pointer;
+            font-size: 16px;
             margin: 10px 0;
+            text-align: center;
             &:hover {
-                background: $light-blue;
+                color: #0060a9;
             }
+        }
+        .grayline{
+            background-color: #dfdfdf;
+            height: 2px;
+            width: 72px;
         }
         .search-details {
             display: flex;
             justify-content: space-around;
             width: 130px;
             p {
-                color: $light-blue;
+                color: #999;
+                font-size: 16px;
                 margin: 15px 0 30px 0;
                 display: inline;
                 position: relative;
                 cursor: pointer;
+                text-align: center;
                 &:nth-child(2) {
                     color: #b1b1b1;
                     font-size: 1.4rem;
