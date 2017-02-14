@@ -1,10 +1,6 @@
 // ===== Page Loading =====
-var initailLoading = new TimelineMax({});
-
-initailLoading.from("#home-page, #category-page", 1.2, {y: 100, opacity: 0, ease: Power2.easeInOut}, 0);
-
-
-
+// var initailLoading = new TimelineMax({});
+// initailLoading.from("#home-page, #category-page", 1.2, {y: 100, opacity: 0, ease: Power2.easeInOut}, 0);
 
 
 // ===== ScrollMagic & TweenMax =====
@@ -16,8 +12,9 @@ var learnMore_1_show = TweenMax.from("#learnMore_1_Show", 1, {y: 100, opacity: 0
 var learnMore_2_show = TweenMax.from("#learnMore_2_Show", 1, {y: 100, opacity: 0, ease: Power2.easeInOut});
 
 var scene = new ScrollMagic.Scene({
-          triggerElement: ".full-width-tile",
-          offset: -200,
+          triggerElement: "#learnMore_1_Show",
+          triggerHook: 'onEnter',
+          offset: 0,
           reverse:false
         })
         .setTween(learnMore_1_show)
@@ -25,8 +22,9 @@ var scene = new ScrollMagic.Scene({
         .addTo(controller);
 
 var scene = new ScrollMagic.Scene({
-          triggerElement: ".full-width-tile",
-          offset: 200,
+          triggerElement: "#learnMore_2_Show",
+          triggerHook: 'onEnter',
+          offset: 50,
           reverse:false
         })
         .setTween(learnMore_2_show)
@@ -37,7 +35,8 @@ var moreProducts = TweenMax.from("#moreProducts", 0.8,  {y: 100, opacity: 0, eas
 
 var scene = new ScrollMagic.Scene({
           triggerElement: "#moreProducts",
-          offset: -200,
+          triggerHook: 'onEnter',
+          offset: 50,
           reverse:false
         })
         .setTween(moreProducts)
@@ -52,7 +51,8 @@ var productPricing_show = TweenMax.from('#productPricing_show', 1, {y: 100, opac
 
 var scene = new ScrollMagic.Scene({
           triggerElement: "#shopByIndustry_show",
-          offset: -300,
+          triggerHook: 'onEnter',
+          offset: 50,
           reverse:false
         })
         .setTween(shopByIndustry_show)
@@ -62,7 +62,8 @@ var scene = new ScrollMagic.Scene({
 
 var scene = new ScrollMagic.Scene({
           triggerElement: "#productPricing_show",
-          offset: -300,
+          triggerHook: 'onEnter',
+          offset: 50,
           reverse:false
         })
         .setTween(productPricing_show)
