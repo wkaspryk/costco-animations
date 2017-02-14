@@ -95,6 +95,7 @@
         top: -30%;
         left: -10px;
         animation: shadowloop 3s cubic-bezier(0.35, 0.01, 0, 0.99) infinite;
+        box-shadow: 0px 0px 50px #f4f4f4;
     }
 
 
@@ -109,7 +110,7 @@
             height: 240px;
             width: 82%;
             margin-bottom: 25px;
-            background-color: #dfdfdf;
+            background-color: #eaeaea;
             border-radius: 15px;
             opacity: 1;
             position: absolute;
@@ -125,14 +126,14 @@
             border-radius: 15px;
         }
         .colors{
-            background-color: #dfdfdf;
+            background-color: #eaeaea;
             border-radius: 20px;
             transition: all 1s cubic-bezier(0.6, 0, 0.2, 1);  
         } 
         h4{ 
             user-select:none;
             color: transparent;
-            background-color: #dfdfdf;
+            background-color: #eaeaea;
             border-radius: 10px;
             width: 80%;
             transition: all 1s linear;
@@ -147,7 +148,7 @@
         a{  
             user-select:none;
             color: transparent;
-            background-color: #dfdfdf;
+            background-color: #eaeaea;
             border-radius: 10px;
             width: 60%;
             transition: all 1s linear;
@@ -161,11 +162,10 @@
         .search-details p{
             user-select:none;
             color: transparent;
-            background-color: #dfdfdf;
+            background-color: #eaeaea;
             border-radius: 10px;
             width: 80%;
             transition: all 1s linear;
-            
         }
         div[class^="colors-"]{
             opacity: 0;
