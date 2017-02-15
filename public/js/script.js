@@ -12,7 +12,10 @@
 
 	            $('.grayloader img').css('opacity', '1');
 	            $('.grayloader .shadow1').removeClass('shadow1');
+				$('.grayloader .shadow2').removeClass('shadow2');
 	            $('.grayloader div[class^="colors-"]').css('opacity', '1');
-	            $('.grayloader .grayline').css('display', 'block');
+	            $('.grayloader .grayline').css('opacity', '1');
 
+				$('.grayloader h4, .grayloader p, .grayloader a, .grayloader .search-details p').css('user-select', 'auto');
+				
         }, 4800);

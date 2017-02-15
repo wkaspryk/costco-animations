@@ -193,4 +193,16 @@
   transform: scaleX(0);
 }
 
+@keyframes shadowOpacity {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
 
